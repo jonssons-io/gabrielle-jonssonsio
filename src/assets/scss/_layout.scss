@@ -1,0 +1,47 @@
+.fill-height {
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.fill-width {
+    width: 100vw;
+    max-width: 100vw;
+}
+
+.d-flex {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-col {
+    flex-flow: column nowrap;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.gap-sm {
+    gap: 1em;
+}
+
+.hero_wrapper {
+    margin-left: 5vw;
+}
