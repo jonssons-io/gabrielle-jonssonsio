@@ -18,6 +18,8 @@ export default {
         return {
             heroTitle1: 'const gabrielle =',
             heroTitle2: ' new Developer()',
+            shortDuration: 2,
+            longDuration: 3.5,
         }
     },
     mounted() {
@@ -30,7 +32,7 @@ export default {
                 {
                     autoAlpha: 1,
                     duration: 1,
-                    repeat: 5,
+                    repeat: this.longDuration,
                     ease: SteppedEase.config(1),
                 }
             )
@@ -43,21 +45,24 @@ export default {
                 {
                     autoAlpha: 1,
                     duration: 1,
-                    repeat: -1,
+                    repeat: this.shortDuration + 3,
                     ease: SteppedEase.config(1),
                 }
             )
+            .to(this.$refs.cursortwo, {
+                autoAlpha: 0,
+            })
 
         tlText
             .to(this.$refs.hero__title, {
                 text: { value: this.heroTitle1 },
-                duration: 5,
+                duration: this.longDuration,
                 delay: 1,
                 ease: 'none',
             })
             .to(this.$refs.hero__titletwo, {
                 text: { value: this.heroTitle2 },
-                duration: 5,
+                duration: this.shortDuration,
                 delay: 1,
                 ease: 'none',
             })
