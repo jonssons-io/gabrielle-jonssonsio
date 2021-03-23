@@ -13,6 +13,10 @@
     flex-flow: row nowrap;
 }
 
+.d-grid {
+    display: grid;
+}
+
 .flex-col {
     flex-flow: column nowrap;
 }
@@ -40,8 +44,4 @@
 
 .gap-sm {
     gap: 1em;
-}
-
-.hero_wrapper {
-    margin-left: 5vw;
 }

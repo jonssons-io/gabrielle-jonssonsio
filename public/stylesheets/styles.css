@@ -371,7 +371,7 @@ h6 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 @media only screen and (min-width: 600px) {
@@ -391,28 +391,103 @@ h1 {
 }
 
 h2 {
-  font-size: 3.75rem;
+  font-size: 2rem;
   font-weight: 300;
+}
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  h2 {
+    font-size: 5rem;
+  }
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 1.2rem;
   font-weight: 400;
+}
+@media only screen and (min-width: 600px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  h3 {
+    font-size: 4.5rem;
+  }
 }
 
 h4 {
-  font-size: 2.125rem;
+  font-size: 1rem;
   font-weight: 400;
+}
+@media only screen and (min-width: 600px) {
+  h4 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  h4 {
+    font-size: 2.125rem;
+  }
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   font-weight: 400;
+}
+@media only screen and (min-width: 600px) {
+  h5 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  h5 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  h5 {
+    font-size: 1.5rem;
+  }
 }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: 0.8rem;
   font-weight: 500;
+}
+@media only screen and (min-width: 600px) {
+  h6 {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  h6 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  h6 {
+    font-size: 1.25rem;
+  }
 }
 
 p,
@@ -426,32 +501,28 @@ button {
   font-size: 1rem;
 }
 
-#cursor {
-  padding-left: 1rem;
+.weight {
+  font-weight: 700;
 }
 
-.spacer {
-  height: 15vh;
-  width: 95vw;
+.clr-c-yellow {
+  color: #f1c916;
 }
 
-.hero__title {
-  line-height: 3rem;
+.clr-c-blue {
+  color: #45cbef;
 }
-@media only screen and (min-width: 600px) {
-  .hero__title {
-    line-height: 3.5rem;
-  }
+
+.clr-c-pink {
+  color: #c4527b;
 }
-@media only screen and (min-width: 960px) {
-  .hero__title {
-    line-height: 4.5rem;
-  }
+
+.clr-c-grey {
+  color: #acb494;
 }
-@media only screen and (min-width: 1264px) {
-  .hero__title {
-    line-height: 6rem;
-  }
+
+.clr-c-darkgrey {
+  color: #272822;
 }
 
 .fill-height {
@@ -467,6 +538,10 @@ button {
 .d-flex {
   display: flex;
   flex-flow: row nowrap;
+}
+
+.d-grid {
+  display: grid;
 }
 
 .flex-col {
@@ -498,8 +573,56 @@ button {
   gap: 1em;
 }
 
+.spacer {
+  width: 95vw;
+}
+.spacer.ten {
+  height: 15vh;
+}
+
 .hero_wrapper {
-  margin-left: 5vw;
+  padding-left: 5vw;
+  background-color: #272822;
+}
+
+.interface {
+  white-space: pre;
+  width: 50vw;
+}
+.interface__interfacedata {
+  line-height: 1.2em;
+}
+@media only screen and (min-width: 600px) {
+  .interface__interfacedata {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .interface__interfacedata {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .interface__interfacedata {
+    font-size: 2.325rem;
+  }
+}
+
+#cursor {
+  padding-left: 1rem;
+}
+
+.hero__title {
+  white-space: pre;
+  color: #acb494;
+}
+
+.indent-1 {
+  padding-left: 2em;
+}
+
+.indent-2 {
+  padding-left: 4em;
 }
 
 /*# sourceMappingURL=styles.css.map */

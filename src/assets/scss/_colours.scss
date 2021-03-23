@@ -3,3 +3,42 @@ $primary-lighten: #af76ff;
 $secondary: #9bca35;
 $accent: #35caaf;
 $warning: #ca3550;
+
+$colors: (
+    theme: (
+        primary: #6435ca,
+        primary-lighten: #af76ff,
+        secondary: #9bca35,
+        accent: #35caaf,
+        warning: #ca3550,
+    ),
+    code: (
+        yellow: #f1c916,
+        blue: #45cbef,
+        pink: #c4527b,
+        grey: #acb494,
+        darkgrey: #272822,
+    ),
+);
+
+@function clr($section, $shade) {
+    $color: map-get(map-get($colors, $section), $shade);
+    @return $color;
+}
+
+.clr-c-yellow {
+    color: clr(code, yellow);
+}
+
+.clr-c-blue {
+    color: clr(code, blue);
+}
+.clr-c-pink {
+    color: clr(code, pink);
+}
+.clr-c-grey {
+    color: clr(code, grey);
+}
+.clr-c-darkgrey {
+    color: clr(code, darkgrey);
+}

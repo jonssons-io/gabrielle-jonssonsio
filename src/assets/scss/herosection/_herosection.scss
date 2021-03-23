@@ -1,0 +1,47 @@
+@use './../breakpoints' as *;
+@use './../colours' as *;
+
+.spacer {
+    width: 95vw;
+    &.ten {
+        height: 15vh;
+    }
+}
+
+.hero_wrapper {
+    padding-left: 5vw;
+    background-color: clr(code, darkgrey);
+}
+
+.interface {
+    white-space: pre;
+    width: 50vw;
+    &__interfacedata {
+        line-height: 1.2em;
+        @include mq(sm) {
+            font-size: 1.2rem;
+        }
+        @include mq(md) {
+            font-size: 1.7rem;
+        }
+        @include mq(lg) {
+            font-size: 2.325rem;
+        }
+    }
+}
+
+#cursor {
+    padding-left: 1rem;
+}
+
+.hero__title {
+    white-space: pre;
+    color: clr(code, grey);
+}
+
+.indent-1 {
+    padding-left: 2em;
+}
+.indent-2 {
+    padding-left: 4em;
+}

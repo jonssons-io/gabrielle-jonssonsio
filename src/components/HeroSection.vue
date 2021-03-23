@@ -1,25 +1,119 @@
 <template>
     <div class="hero_wrapper d-flex flex-wrap align-start fill-height">
+        <div class="spacer ten"></div>
+        <h3 ref="hero__title" id="text" class="hero__title"></h3>
+        <h3 ref="cursor" id="cursor" class="hero__title">|</h3>
+        <h3 ref="hero__titletwo" id="text-two" class="hero__title"></h3>
+        <h3 ref="cursortwo" id="cursor-two" class="hero__title">|</h3>
         <div class="spacer"></div>
-        <h1 ref="hero__title" id="text" class="hero__title"></h1>
-        <h1 ref="cursor" id="cursor" class="hero__title">|</h1>
-        <h1 ref="hero__titletwo" id="text-two" class="hero__title"></h1>
-        <h1 ref="cursortwo" id="cursor-two" class="hero__title">|</h1>
+        <h3 ref="hero__titlethree" id="text-three" class="hero__title"></h3>
+        <h3 ref="cursorthree" id="cursor-three" class="hero__title">|</h3>
+        <div class="spacer"></div>
+        <div ref="data" class="interface d-grid">
+            <h4 class="interface__interfacedata clr-c-yellow">{</h4>
+            <div class="spacer"></div>
+            <div class="d-flex indent-1">
+                <h4 class="interface__interfacedata clr-c-blue">"person"</h4>
+                <h4 class="interface__interfacedata clr-c-grey weight">
+                    {{ `:  ` }}
+                </h4>
+                <h4 class="interface__interfacedata clr-c-pink">{</h4>
+            </div>
+            <div class="spacer"></div>
+            <div class="d-flex indent-2">
+                <h4 class="interface__interfacedata clr-c-blue">"firstName"</h4>
+                <h4 class="interface__interfacedata clr-c-grey">
+                    {{ `:  "gabrielle",` }}
+                </h4>
+            </div>
+            <div class="spacer"></div>
+            <div class="d-flex indent-2">
+                <h4 class="interface__interfacedata clr-c-blue">"lastName"</h4>
+                <h4 class="interface__interfacedata clr-c-grey">
+                    {{ `:  "jonsson",` }}
+                </h4>
+            </div>
+            <div class="spacer"></div>
+            <div class="d-flex indent-2">
+                <h4 class="interface__interfacedata clr-c-blue">"location"</h4>
+                <h4 class="interface__interfacedata clr-c-grey">
+                    {{ `:  "gothenburg",` }}
+                </h4>
+            </div>
+            <div class="spacer"></div>
+            <div class="d-flex indent-2">
+                <h4 class="interface__interfacedata clr-c-blue">"level"</h4>
+                <h4 class="interface__interfacedata clr-c-grey">
+                    {{ `:  "junior"` }}
+                </h4>
+            </div>
+            <div class="spacer"></div>
+            <div class="d-flex indent-1">
+                <h4 class="interface__interfacedata clr-c-pink">}</h4>
+                <h4 class="interface__interfacedata clr-c-grey weight">
+                    {{ ` ,` }}
+                </h4>
+            </div>
+            <div class="spacer"></div>
+            <div class="d-flex indent-1">
+                <h4 class="interface__interfacedata clr-c-blue">"stack"</h4>
+                <h4 class="interface__interfacedata clr-c-grey weight">
+                    {{ `:  ` }}
+                </h4>
+                <h4 class="interface__interfacedata clr-c-pink">[</h4>
+                <h4 class="interface__interfacedata clr-c-grey">
+                    "javascript", "vue", "angular"
+                </h4>
+                <h4 class="interface__interfacedata clr-c-pink">]</h4>
+            </div>
+            <div class="spacer"></div>
+            <div class="d-flex indent-1">
+                <h4 class="interface__interfacedata clr-c-blue">"cats"</h4>
+                <h4 class="interface__interfacedata clr-c-grey weight">
+                    {{ `:  ` }}
+                </h4>
+                <h4 class="interface__interfacedata clr-c-pink">[</h4>
+                <h4 class="interface__interfacedata clr-c-grey">
+                    "zephyr", "chen", "sven"
+                </h4>
+                <h4 class="interface__interfacedata clr-c-pink">]</h4>
+            </div>
+            <div class="spacer"></div>
+            <h4 class="interface__interfacedata clr-c-yellow">}</h4>
+        </div>
     </div>
 </template>
 
 <script>
-// import { TimelineMax, SteppedEase } from 'gsap'
 import { SteppedEase, gsap } from 'gsap'
 
 export default {
     name: 'HeroSection',
     data() {
         return {
-            heroTitle1: 'const gabrielle =',
-            heroTitle2: ' new Developer()',
+            heroTitle1: 'const gabrielle = ',
+            heroTitle2: 'new Developer()',
+            heroTitle3: 'console.log(gabrielle)',
             shortDuration: 2,
             longDuration: 3.5,
+            interfaceData: {
+                person: {
+                    firstName: 'gabrielle',
+                    lastName: 'jonsson',
+                    age: '32',
+                    city: 'gothenburg',
+                },
+                stack: ['javascript', 'vue', 'react'],
+            },
+            interfaceData2: ` {
+            "person"  :  {
+                "firstName":  "gabrielle", 
+                "lastName":  "jonsson", 
+                "age":  "32", 
+                "city":  "gothenburg"
+            },
+            "stack"  :  ["javascript",  "vue",  "react"],
+    }`,
         }
     },
     mounted() {
@@ -36,11 +130,20 @@ export default {
                     ease: SteppedEase.config(1),
                 }
             )
-            .to(this.$refs.cursor, {
-                autoAlpha: 0,
-            })
+            .to(this.$refs.cursor, { opacity: 0, display: 'none' })
             .fromTo(
                 this.$refs.cursortwo,
+                { autoAlpha: 0 },
+                {
+                    autoAlpha: 1,
+                    duration: 1,
+                    repeat: this.shortDuration,
+                    ease: SteppedEase.config(1),
+                }
+            )
+            .to(this.$refs.cursortwo, { opacity: 0, display: 'none' })
+            .fromTo(
+                this.$refs.cursorthree,
                 { autoAlpha: 0 },
                 {
                     autoAlpha: 1,
@@ -49,9 +152,7 @@ export default {
                     ease: SteppedEase.config(1),
                 }
             )
-            .to(this.$refs.cursortwo, {
-                autoAlpha: 0,
-            })
+            .to(this.$refs.cursorthree, { opacity: 0, display: 'none' })
 
         tlText
             .to(this.$refs.hero__title, {
@@ -66,37 +167,26 @@ export default {
                 delay: 1,
                 ease: 'none',
             })
-        // const tl = new TimelineMax({
-        //     paused: false,
-        // })
-        // // letter animation
-        // tl.fromTo(
-        //     'anim-typewriter',
-        //     8,
-        //     {
-        //         width: '0',
-        //     },
-        //     {
-        //         width: '20.18em' /*same as CSS .line-1 width */,
-        //         ease: SteppedEase.config(37),
-        //     },
-        //     0
-        // )
-        // // text cursor animation
-        // tl.fromTo(
-        //     'anim-typewriter',
-        //     0.5,
-        //     {
-        //         'border-right-color': 'rgba(255,255,255,0.75)',
-        //     },
-        //     {
-        //         'border-right-color': 'rgba(255,255,255,0)',
-        //         repeat: -1,
-        //         ease: SteppedEase.config(37),
-        //     },
-        //     0
-        // )
-        // tl.play()
+            .to(this.$refs.hero__titlethree, {
+                text: { value: this.heroTitle3 },
+                duration: this.shortDuration,
+                delay: 1,
+                ease: 'none',
+            })
+            .fromTo(
+                this.$refs.data,
+                {
+                    x: -500,
+                    display: 'none',
+                },
+                {
+                    delay: 0.5,
+                    duration: 1.5,
+                    ease: 'power2.out',
+                    x: 0,
+                    display: 'block',
+                }
+            )
     },
 }
 </script>
