@@ -525,6 +525,10 @@ button {
   color: #272822;
 }
 
+.clr-t-primary {
+  color: #6435ca;
+}
+
 .fill-height {
   height: 100vh;
   max-height: 100vh;
@@ -623,6 +627,74 @@ button {
 
 .indent-2 {
   padding-left: 4em;
+}
+
+.presentation_wrapper {
+  height: 50vh;
+}
+
+.greeting {
+  padding-top: 6em;
+}
+.greeting h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media only screen and (min-width: 600px) {
+  .greeting h4 {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .greeting h4 {
+    font-size: 2.25rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .greeting h4 {
+    font-size: 3rem;
+  }
+}
+.greeting .hello {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+@media only screen and (min-width: 600px) {
+  .greeting .hello {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .greeting .hello {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .greeting .hello {
+    font-size: 4.5rem;
+  }
+}
+.greeting .profilebubble {
+  height: 150px;
+  width: 150px;
+}
+@media only screen and (min-width: 600px) {
+  .greeting .profilebubble {
+    height: 175px;
+    width: 175px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .greeting .profilebubble {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .greeting .profilebubble {
+    height: 250px;
+    width: 250px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,51 @@
+@use './../colours' as *;
+@use './../breakpoints' as *;
+
+.presentation_wrapper {
+    height: 50vh;
+}
+.greeting {
+    padding-top: 6em;
+    h4 {
+        font-size: 1rem;
+        font-weight: 400;
+        @include mq(sm) {
+            font-size: 1.6rem;
+        }
+        @include mq(md) {
+            font-size: 2.25rem;
+        }
+        @include mq(lg) {
+            font-size: 3rem;
+        }
+    }
+    .hello {
+        font-size: 1.2rem;
+        font-weight: 400;
+        @include mq(sm) {
+            font-size: 2rem;
+        }
+        @include mq(md) {
+            font-size: 3rem;
+        }
+        @include mq(lg) {
+            font-size: 4.5rem;
+        }
+    }
+    .profilebubble {
+        height: 150px;
+        width: 150px;
+        @include mq(sm) {
+            height: 175px;
+            width: 175px;
+        }
+        @include mq(md) {
+            height: 200px;
+            width: 200px;
+        }
+        @include mq(lg) {
+            height: 250px;
+            width: 250px;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 <template>
-    <div class="hero_wrapper d-flex flex-wrap align-start fill-height">
+    <section class="hero_wrapper d-flex flex-wrap align-start fill-height">
         <div class="spacer ten"></div>
         <h3 ref="hero__title" id="text" class="hero__title"></h3>
         <h3 ref="cursor" id="cursor" class="hero__title">|</h3>
@@ -81,7 +81,7 @@
             <div class="spacer"></div>
             <h4 class="interface__interfacedata clr-c-yellow">}</h4>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

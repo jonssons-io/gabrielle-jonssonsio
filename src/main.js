@@ -4,9 +4,10 @@ import router from './router'
 import store from './store'
 import gsap from 'gsap'
 import { TextPlugin } from 'gsap/TextPlugin'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import './../public/stylesheets/styles.css'
 
-gsap.registerPlugin(TextPlugin)
+gsap.registerPlugin(TextPlugin, ScrollTrigger)
 
 Vue.config.productionTip = false
 
