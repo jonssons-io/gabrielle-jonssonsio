@@ -18,6 +18,7 @@
                 padding: 0 0.5em;
                 text-transform: uppercase;
                 letter-spacing: 0.225rem;
+                cursor: pointer;
             }
         }
     }
@@ -124,6 +125,7 @@ ul.sidebar__panel-nav > li > a {
     display: block;
     padding-top: 1em;
     padding-bottom: 1em;
+    cursor: pointer;
 }
 .slide-enter-active,
 .slide-leave-active {
