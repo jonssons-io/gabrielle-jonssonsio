@@ -3,6 +3,7 @@ $primary-lighten: #af76ff;
 $secondary: #9bca35;
 $accent: #35caaf;
 $warning: #ca3550;
+$cblue: #45cbef;
 
 $colors: (
     theme: (
@@ -11,6 +12,7 @@ $colors: (
         secondary: #9bca35,
         accent: #35caaf,
         warning: #ca3550,
+        white: #fff,
     ),
     code: (
         yellow: #f1c916,
@@ -44,4 +46,20 @@ $colors: (
 }
 .clr-t-primary {
     color: clr(theme, primary);
+}
+.clr-t-white {
+    color: clr(theme, white);
+}
+
+.bgclr-t-white {
+    background-color: clr(theme, white);
+}
+.bgclr-c-darkgrey {
+    background-color: clr(code, darkgrey);
+}
+.bgclr-c-blue {
+    background-color: clr(code, blue);
+}
+.bgclr-t-primary {
+    background-color: clr(theme, primary);
 }

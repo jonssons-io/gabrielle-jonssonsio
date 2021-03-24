@@ -1,0 +1,159 @@
+@use './../colours' as *;
+@use './../breakpoints' as *;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 200;
+    height: 10vh;
+    &__links {
+        display: none;
+        @include mq(sm) {
+            display: flex;
+            width: 60vw;
+            margin: 2vh 0 2vh 0;
+            &-link {
+                padding: 0 0.5em;
+                text-transform: uppercase;
+                letter-spacing: 0.225rem;
+            }
+        }
+    }
+}
+
+#header__burger {
+    display: block;
+    @include mq(sm) {
+        display: none;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* remove blue outline */
+button:focus {
+    outline: 0;
+}
+
+.header__burger-button {
+    position: relative;
+    margin: 1em;
+    height: 30px;
+    width: 32px;
+    display: block;
+    z-index: 999;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    pointer-events: all;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.header__burger-bar {
+    background-color: $cblue;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    left: 6px;
+    height: 2px;
+    width: auto;
+    margin-top: -1px;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
+        opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+        background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.burger-bar--1 {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.burger-bar--2 {
+    transform-origin: 100% 50%;
+    transform: scaleX(0.8);
+}
+
+.header__burger-button:hover .burger-bar--2 {
+    transform: scaleX(1);
+}
+
+.no-touchevents .burger-bar--2:hover {
+    transform: scaleX(1);
+}
+
+.burger-bar--3 {
+    transform: translateY(6px);
+}
+
+#header__burger.active .header__burger-button {
+    transform: rotate(-180deg);
+}
+
+#header__burger.active .header__burger-bar {
+    background-color: $secondary;
+}
+
+#header__burger.active .burger-bar--1 {
+    transform: rotate(45deg);
+}
+
+#header__burger.active .burger-bar--2 {
+    opacity: 0;
+}
+
+#header__burger.active .burger-bar--3 {
+    transform: rotate(-45deg);
+}
+
+ul.sidebar__panel-nav {
+    list-style-type: none;
+}
+
+ul.sidebar__panel-nav > li > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.slide-enter-active,
+.slide-leave-active {
+    transition: transform 0.2s ease;
+}
+
+.slide-enter,
+.slide-leave-to {
+    transform: translateX(-100%);
+    transition: all 150ms ease-in 0s;
+}
+
+.sidebar__backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.sidebar__panel {
+    overflow-y: auto;
+    background-color: $primary;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 990;
+    padding: 3rem 20px 2rem 20px;
+    width: 300px;
+}
