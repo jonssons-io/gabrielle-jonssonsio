@@ -598,17 +598,17 @@ button {
 }
 @media only screen and (min-width: 600px) {
   .interface__interfacedata {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 }
 @media only screen and (min-width: 960px) {
   .interface__interfacedata {
-    font-size: 1.7rem;
+    font-size: 2.7rem;
   }
 }
 @media only screen and (min-width: 1264px) {
   .interface__interfacedata {
-    font-size: 2.325rem;
+    font-size: 3rem;
   }
 }
 
@@ -619,6 +619,22 @@ button {
 .hero__title {
   white-space: pre;
   color: #acb494;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 600px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .hero__title {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .hero__title {
+    font-size: 4rem;
+  }
 }
 
 .indent-1 {
@@ -629,71 +645,109 @@ button {
   padding-left: 4em;
 }
 
-.presentation_wrapper {
+.presentation {
   height: 50vh;
+  margin: 0 1em;
 }
-
-.greeting {
+.presentation__greeting {
   padding-top: 6em;
+  gap: 0.5em;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.5fr 2.5fr;
 }
-.greeting h4 {
-  font-size: 1rem;
+.presentation__greeting h4 {
+  font-size: 1.8rem;
   font-weight: 400;
+  grid-column: 1/1;
+  grid-row: 1/1;
 }
 @media only screen and (min-width: 600px) {
-  .greeting h4 {
-    font-size: 1.6rem;
-  }
-}
-@media only screen and (min-width: 960px) {
-  .greeting h4 {
-    font-size: 2.25rem;
-  }
-}
-@media only screen and (min-width: 1264px) {
-  .greeting h4 {
-    font-size: 3rem;
-  }
-}
-.greeting .hello {
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-@media only screen and (min-width: 600px) {
-  .greeting .hello {
+  .presentation__greeting h4 {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 960px) {
-  .greeting .hello {
+  .presentation__greeting h4 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .presentation__greeting h4 {
+    font-size: 3.5rem;
+  }
+}
+.presentation__hello {
+  font-size: 2rem;
+  font-weight: 400;
+}
+@media only screen and (min-width: 600px) {
+  .presentation__hello {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .presentation__hello {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1264px) {
-  .greeting .hello {
+  .presentation__hello {
     font-size: 4.5rem;
   }
 }
-.greeting .profilebubble {
-  height: 150px;
-  width: 150px;
+.presentation__profilebubble {
+  height: 100px;
+  width: 100px;
+  grid-column: 2/2;
+  grid-row: 1/span 2;
+  justify-self: center;
+  margin-top: 1.5em;
 }
 @media only screen and (min-width: 600px) {
-  .greeting .profilebubble {
+  .presentation__profilebubble {
     height: 175px;
     width: 175px;
   }
 }
 @media only screen and (min-width: 960px) {
-  .greeting .profilebubble {
+  .presentation__profilebubble {
     height: 200px;
     width: 200px;
   }
 }
 @media only screen and (min-width: 1264px) {
-  .greeting .profilebubble {
+  .presentation__profilebubble {
     height: 250px;
     width: 250px;
+  }
+}
+.presentation__story {
+  grid-column: 1/1;
+  grid-row: 2/2;
+}
+.presentation__story p {
+  font-weight: 400;
+  max-width: 20ch;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+@media only screen and (min-width: 600px) {
+  .presentation__story p {
+    max-width: 30ch;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .presentation__story p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .presentation__story p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
   }
 }
 

@@ -1,29 +1,36 @@
 @use './../colours' as *;
 @use './../breakpoints' as *;
 
-.presentation_wrapper {
+.presentation {
     height: 50vh;
-}
-.greeting {
-    padding-top: 6em;
-    h4 {
-        font-size: 1rem;
-        font-weight: 400;
-        @include mq(sm) {
-            font-size: 1.6rem;
-        }
-        @include mq(md) {
-            font-size: 2.25rem;
-        }
-        @include mq(lg) {
-            font-size: 3rem;
+    margin: 0 1em;
+
+    &__greeting {
+        padding-top: 6em;
+        gap: 0.5em;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 0.5fr 2.5fr;
+        h4 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            grid-column: 1 / 1;
+            grid-row: 1 / 1;
+            @include mq(sm) {
+                font-size: 2rem;
+            }
+            @include mq(md) {
+                font-size: 2.5rem;
+            }
+            @include mq(lg) {
+                font-size: 3.5rem;
+            }
         }
     }
-    .hello {
-        font-size: 1.2rem;
+    &__hello {
+        font-size: 2rem;
         font-weight: 400;
         @include mq(sm) {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
         @include mq(md) {
             font-size: 3rem;
@@ -32,9 +39,13 @@
             font-size: 4.5rem;
         }
     }
-    .profilebubble {
-        height: 150px;
-        width: 150px;
+    &__profilebubble {
+        height: 100px;
+        width: 100px;
+        grid-column: 2 / 2;
+        grid-row: 1 / span 2;
+        justify-self: center;
+        margin-top: 1.5em;
         @include mq(sm) {
             height: 175px;
             width: 175px;
@@ -46,6 +57,29 @@
         @include mq(lg) {
             height: 250px;
             width: 250px;
+        }
+    }
+    &__story {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+        p {
+            font-weight: 400;
+            max-width: 20ch;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            @include mq(sm) {
+                max-width: 30ch;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+            }
+            @include mq(md) {
+                font-size: 1.5rem;
+                line-height: 2.2rem;
+            }
+            @include mq(lg) {
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+            }
         }
     }
 }

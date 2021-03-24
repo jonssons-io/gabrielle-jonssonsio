@@ -1,13 +1,20 @@
 <template>
-    <section class="presentation_wrapper d-flex flex-wrap justify-center">
-        <div class="greeting">
+    <section class="presentation d-flex flex-wrap justify-center">
+        <div class="presentation__greeting d-grid">
             <h4 ref="greeting">
-                <span class="hello clr-t-primary">Hello. </span>I'm Gabrielle.
+                <span class="presentation__hello clr-t-primary">Hello. </span
+                >I'm Gabrielle.
             </h4>
+            <div class="presentation__story">
+                <p>
+                    I started my journey to become a frontend developer in 2019.
+                </p>
+                <p></p>
+            </div>
             <img
                 ref="profilebubble"
-                class="profilebubble"
-                src="./../assets/images/GabLilacG.png"
+                class="presentation__profilebubble"
+                src="./../assets/images/Gab.png"
             />
         </div>
     </section>
@@ -24,13 +31,12 @@ export default {
         scrollAnimation() {
             gsap.fromTo(
                 this.$refs.profilebubble,
-                { autoAlpha: 0, x: 500 },
+                { autoAlpha: 0 },
                 {
                     scrollTrigger: this.$refs.greeting,
                     duration: 4,
                     delay: 2,
                     autoAlpha: 1,
-                    x: 500,
                 }
             )
         },
