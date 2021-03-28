@@ -74,14 +74,19 @@
             <div class="spacer"></div>
             <h3 class="interface__interfacedata clr-c-yellow">}</h3>
         </div>
+        <ScrollIndicator class="scrollindicator scrollindicator__hero" />
     </section>
 </template>
 
 <script>
 import { SteppedEase, gsap } from 'gsap'
+import ScrollIndicator from './ScrollIndicator'
 
 export default {
     name: 'HeroSection',
+    components: {
+        ScrollIndicator,
+    },
     data() {
         return {
             heroTitle1: 'const gabrielle = ',
@@ -99,9 +104,9 @@ export default {
             },
             interfaceData2: ` {
             "person"  :  {
-                "firstName":  "gabrielle", 
-                "lastName":  "jonsson", 
-                "age":  "32", 
+                "firstName":  "gabrielle",
+                "lastName":  "jonsson",
+                "age":  "32",
                 "city":  "gothenburg"
             },
             "stack"  :  ["javascript",  "vue",  "react"],

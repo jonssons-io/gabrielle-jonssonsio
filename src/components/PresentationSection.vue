@@ -24,13 +24,21 @@
                 src="./../assets/images/Gab.png"
             />
         </div>
+        <ScrollIndicator
+            class="scrollindicator scrollindicator__presentation"
+        />
     </section>
 </template>
 
 <script>
 import { gsap } from 'gsap'
+import ScrollIndicator from './ScrollIndicator'
+
 export default {
     name: 'PresentationSection',
+    components: {
+        ScrollIndicator,
+    },
     mounted() {
         this.scrollAnimation()
     },

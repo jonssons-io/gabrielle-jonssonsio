@@ -4,12 +4,18 @@
             <div class="light"></div>
             <div class="dark"></div>
         </div>
+        <ScrollIndicator class="scrollindicator scrollindicator__projects" />
     </section>
 </template>
 
 <script>
+import ScrollIndicator from './ScrollIndicator'
+
 export default {
     name: 'ProjectSection',
+    components: {
+        ScrollIndicator,
+    },
     data() {
         return {
             projects: [

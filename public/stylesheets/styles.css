@@ -624,6 +624,82 @@ button {
   gap: 1em;
 }
 
+.scrollindicator {
+  position: absolute;
+  left: calc(50vw - 1rem);
+  font-size: 2rem;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+.scrollindicator__hero {
+  top: 92vh;
+  color: #45cbef;
+}
+.scrollindicator__presentation {
+  top: 192vh;
+  color: #6435ca;
+}
+@media only screen and (min-width: 600px) {
+  .scrollindicator__presentation {
+    top: 157vh;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .scrollindicator__presentation {
+    top: 167vh;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .scrollindicator__presentation {
+    top: 177vh;
+  }
+}
+.scrollindicator__projects {
+  top: 292vh;
+  color: #fff;
+}
+@media only screen and (min-width: 600px) {
+  .scrollindicator__projects {
+    top: 257vh;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .scrollindicator__projects {
+    top: 267vh;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .scrollindicator__projects {
+    top: 277vh;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-20px);
+  }
+  50% {
+    transform: scale(1, 1) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
 .spacer {
   width: 95vw;
 }

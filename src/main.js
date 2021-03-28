@@ -6,8 +6,14 @@ import ScrollMagic from 'scrollmagic'
 import gsap from 'gsap'
 import { TextPlugin } from 'gsap/TextPlugin'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import './../public/stylesheets/styles.css'
 
+library.add(faAngleDown)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 gsap.registerPlugin(TextPlugin, ScrollTrigger)
 Vue.use(ScrollMagic)
 

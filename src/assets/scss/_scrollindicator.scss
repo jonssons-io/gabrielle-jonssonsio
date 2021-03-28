@@ -1,0 +1,67 @@
+@use './colours' as *;
+@use './breakpoints' as *;
+
+.scrollindicator {
+    position: absolute;
+    left: calc(50vw - 1rem);
+    font-size: 2rem;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-name: bounce;
+    animation-timing-function: ease;
+    &__hero {
+        top: 92vh;
+        color: $cblue;
+    }
+    &__presentation {
+        top: 192vh;
+        color: $primary;
+        @include mq(sm) {
+            top: 157vh;
+        }
+        @include mq(md) {
+            top: 167vh;
+        }
+        @include mq(lg) {
+            top: 177vh;
+        }
+    }
+    &__projects {
+        top: 292vh;
+        color: $white;
+        @include mq(sm) {
+            top: 257vh;
+        }
+        @include mq(md) {
+            top: 267vh;
+        }
+        @include mq(lg) {
+            top: 277vh;
+        }
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+    10% {
+        transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+        transform: scale(0.9, 1.1) translateY(-20px);
+    }
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+    57% {
+        transform: scale(1, 1) translateY(-7px);
+    }
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
