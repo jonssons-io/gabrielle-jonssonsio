@@ -13,45 +13,26 @@
     background-color: clr(code, darkgrey);
 }
 
+// Printed text header
+.hero__title {
+    white-space: pre;
+    color: clr(code, grey);
+}
+
+// Static textbody
 .interface {
     white-space: pre;
     width: 50vw;
-    &__interfacedata {
-        line-height: 1.2em;
-        @include mq(sm) {
-            font-size: 1.7rem;
-        }
-        @include mq(md) {
-            font-size: 2.7rem;
-        }
-        @include mq(lg) {
-            font-size: 3rem;
-        }
-    }
+    margin-top: 2em;
 }
 
 #cursor {
     padding-left: 1rem;
 }
 
-.hero__title {
-    white-space: pre;
-    color: clr(code, grey);
-    font-size: 2rem;
-    @include mq(sm) {
-        font-size: 2.5rem;
-    }
-    @include mq(md) {
-        font-size: 3.5rem;
-    }
-    @include mq(lg) {
-        font-size: 4rem;
-    }
-}
-
 .indent-1 {
-    padding-left: 2em;
+    padding-left: 1em;
 }
 .indent-2 {
-    padding-left: 4em;
+    padding-left: 2em;
 }

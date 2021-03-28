@@ -1,85 +1,78 @@
 <template>
     <section class="hero_wrapper d-flex flex-wrap align-start fill-height">
         <div class="spacer ten"></div>
-        <h3 ref="hero__title" id="text" class="hero__title"></h3>
-        <h3 ref="cursor" id="cursor" class="hero__title">|</h3>
-        <h3 ref="hero__titletwo" id="text-two" class="hero__title"></h3>
-        <h3 ref="cursortwo" id="cursor-two" class="hero__title">|</h3>
+        <h1 ref="hero__title" id="text" class="hero__title"></h1>
+        <h1 ref="cursor" id="cursor" class="hero__title">|</h1>
+        <h1 ref="hero__titletwo" id="text-two" class="hero__title"></h1>
+        <h1 ref="cursortwo" id="cursor-two" class="hero__title">|</h1>
         <div class="spacer"></div>
-        <h3 ref="hero__titlethree" id="text-three" class="hero__title"></h3>
-        <h3 ref="cursorthree" id="cursor-three" class="hero__title">|</h3>
+        <h1 ref="hero__titlethree" id="text-three" class="hero__title"></h1>
+        <h1 ref="cursorthree" id="cursor-three" class="hero__title">|</h1>
         <div class="spacer"></div>
         <div ref="data" class="interface d-grid">
-            <h4 class="interface__interfacedata clr-c-yellow">{</h4>
+            <h3 class="interface__interfacedata clr-c-yellow">{</h3>
             <div class="spacer"></div>
             <div class="d-flex indent-1">
-                <h4 class="interface__interfacedata clr-c-blue">"person"</h4>
-                <h4 class="interface__interfacedata clr-c-grey weight">
+                <h3 class="interface__interfacedata clr-c-blue">"person"</h3>
+                <h3 class="interface__interfacedata clr-c-grey">
                     {{ `:  ` }}
-                </h4>
-                <h4 class="interface__interfacedata clr-c-pink">{</h4>
+                </h3>
+                <h3 class="interface__interfacedata clr-c-pink">{</h3>
             </div>
             <div class="spacer"></div>
             <div class="d-flex indent-2">
-                <h4 class="interface__interfacedata clr-c-blue">"firstName"</h4>
-                <h4 class="interface__interfacedata clr-c-grey">
-                    {{ `:  "gabrielle",` }}
-                </h4>
+                <h3 class="interface__interfacedata clr-c-blue">"name"</h3>
+                <h3 class="interface__interfacedata clr-c-grey">
+                    {{ `:  "gabrielle jonsson",` }}
+                </h3>
             </div>
             <div class="spacer"></div>
             <div class="d-flex indent-2">
-                <h4 class="interface__interfacedata clr-c-blue">"lastName"</h4>
-                <h4 class="interface__interfacedata clr-c-grey">
-                    {{ `:  "jonsson",` }}
-                </h4>
-            </div>
-            <div class="spacer"></div>
-            <div class="d-flex indent-2">
-                <h4 class="interface__interfacedata clr-c-blue">"location"</h4>
-                <h4 class="interface__interfacedata clr-c-grey">
+                <h3 class="interface__interfacedata clr-c-blue">"location"</h3>
+                <h3 class="interface__interfacedata clr-c-grey">
                     {{ `:  "gothenburg",` }}
-                </h4>
+                </h3>
             </div>
             <div class="spacer"></div>
             <div class="d-flex indent-2">
-                <h4 class="interface__interfacedata clr-c-blue">"level"</h4>
-                <h4 class="interface__interfacedata clr-c-grey">
+                <h3 class="interface__interfacedata clr-c-blue">"level"</h3>
+                <h3 class="interface__interfacedata clr-c-grey">
                     {{ `:  "junior"` }}
-                </h4>
+                </h3>
             </div>
             <div class="spacer"></div>
             <div class="d-flex indent-1">
-                <h4 class="interface__interfacedata clr-c-pink">}</h4>
-                <h4 class="interface__interfacedata clr-c-grey weight">
+                <h3 class="interface__interfacedata clr-c-pink">}</h3>
+                <h3 class="interface__interfacedata clr-c-grey">
                     {{ ` ,` }}
-                </h4>
+                </h3>
             </div>
             <div class="spacer"></div>
             <div class="d-flex indent-1">
-                <h4 class="interface__interfacedata clr-c-blue">"stack"</h4>
-                <h4 class="interface__interfacedata clr-c-grey weight">
+                <h3 class="interface__interfacedata clr-c-blue">"stack"</h3>
+                <h3 class="interface__interfacedata clr-c-grey">
                     {{ `:  ` }}
-                </h4>
-                <h4 class="interface__interfacedata clr-c-pink">[</h4>
-                <h4 class="interface__interfacedata clr-c-grey">
-                    "javascript", "vue", "angular"
-                </h4>
-                <h4 class="interface__interfacedata clr-c-pink">]</h4>
+                </h3>
+                <h3 class="interface__interfacedata clr-c-pink">[</h3>
+                <h3 class="interface__interfacedata clr-c-grey">
+                    "react", "vue", "angular"
+                </h3>
+                <h3 class="interface__interfacedata clr-c-pink">]</h3>
             </div>
             <div class="spacer"></div>
             <div class="d-flex indent-1">
-                <h4 class="interface__interfacedata clr-c-blue">"cats"</h4>
-                <h4 class="interface__interfacedata clr-c-grey weight">
+                <h3 class="interface__interfacedata clr-c-blue">"cats"</h3>
+                <h3 class="interface__interfacedata clr-c-grey">
                     {{ `:  ` }}
-                </h4>
-                <h4 class="interface__interfacedata clr-c-pink">[</h4>
-                <h4 class="interface__interfacedata clr-c-grey">
+                </h3>
+                <h3 class="interface__interfacedata clr-c-pink">[</h3>
+                <h3 class="interface__interfacedata clr-c-grey">
                     "zephyr", "chen", "sven"
-                </h4>
-                <h4 class="interface__interfacedata clr-c-pink">]</h4>
+                </h3>
+                <h3 class="interface__interfacedata clr-c-pink">]</h3>
             </div>
             <div class="spacer"></div>
-            <h4 class="interface__interfacedata clr-c-yellow">}</h4>
+            <h3 class="interface__interfacedata clr-c-yellow">}</h3>
         </div>
     </section>
 </template>
@@ -98,8 +91,7 @@ export default {
             longDuration: 3.5,
             interfaceData: {
                 person: {
-                    firstName: 'gabrielle',
-                    lastName: 'jonsson',
+                    name: 'gabrielle jonsson',
                     age: '32',
                     city: 'gothenburg',
                 },

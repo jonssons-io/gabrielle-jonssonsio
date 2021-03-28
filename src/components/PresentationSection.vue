@@ -1,15 +1,22 @@
 <template>
     <section class="presentation d-flex flex-wrap justify-center">
         <div class="presentation__greeting d-grid">
-            <h4 ref="greeting">
+            <h2 ref="greeting">
                 <span class="presentation__hello clr-t-primary">Hello. </span
                 >I'm Gabrielle.
-            </h4>
+            </h2>
             <div class="presentation__story">
-                <p>
+                <p class="presentation__story-section">
                     I started my journey to become a frontend developer in 2019.
                 </p>
-                <p></p>
+                <p class="presentation__story-section">
+                    Although JavaScript is my strong suite, I recently found an
+                    interest in accessibility, UX and UI.
+                </p>
+                <p class="presentation__story-section">
+                    On the odd chance I am not working on a project, you'll
+                    probably find me challenging my husband in CodeWars. :)
+                </p>
             </div>
             <img
                 ref="profilebubble"

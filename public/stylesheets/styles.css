@@ -371,62 +371,62 @@ h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-weight: 300;
-}
-@media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 3.5rem;
-  }
-}
-@media only screen and (min-width: 960px) {
-  h1 {
-    font-size: 4.5rem;
-  }
-}
-@media only screen and (min-width: 1264px) {
-  h1 {
-    font-size: 6rem;
-  }
-}
-
-h2 {
   font-size: 2rem;
   font-weight: 300;
 }
 @media only screen and (min-width: 600px) {
-  h2 {
+  h1 {
     font-size: 2.5rem;
   }
 }
 @media only screen and (min-width: 960px) {
-  h2 {
+  h1 {
     font-size: 3.5rem;
   }
 }
 @media only screen and (min-width: 1264px) {
-  h2 {
-    font-size: 5rem;
+  h1 {
+    font-size: 4.5rem;
   }
 }
 
-h3 {
-  font-size: 1.2rem;
-  font-weight: 400;
+h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 @media only screen and (min-width: 600px) {
-  h3 {
-    font-size: 2rem;
+  h2 {
+    font-size: 2.2rem;
   }
 }
 @media only screen and (min-width: 960px) {
-  h3 {
+  h2 {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1264px) {
+  h2 {
+    font-size: 3.8rem;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.2em;
+}
+@media only screen and (min-width: 600px) {
   h3 {
-    font-size: 4.5rem;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  h3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -499,6 +499,29 @@ a,
 button {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
+  line-height: 1.2em;
+}
+@media only screen and (min-width: 960px) {
+  p,
+label,
+span,
+text-area,
+input,
+a,
+button {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  p,
+label,
+span,
+text-area,
+input,
+a,
+button {
+    font-size: 1.2rem;
+  }
 }
 
 .weight {
@@ -613,91 +636,85 @@ button {
   background-color: #272822;
 }
 
+.hero__title {
+  white-space: pre;
+  color: #acb494;
+}
+
 .interface {
   white-space: pre;
   width: 50vw;
-}
-.interface__interfacedata {
-  line-height: 1.2em;
-}
-@media only screen and (min-width: 600px) {
-  .interface__interfacedata {
-    font-size: 1.7rem;
-  }
-}
-@media only screen and (min-width: 960px) {
-  .interface__interfacedata {
-    font-size: 2.7rem;
-  }
-}
-@media only screen and (min-width: 1264px) {
-  .interface__interfacedata {
-    font-size: 3rem;
-  }
+  margin-top: 2em;
 }
 
 #cursor {
   padding-left: 1rem;
 }
 
-.hero__title {
-  white-space: pre;
-  color: #acb494;
-  font-size: 2rem;
-}
-@media only screen and (min-width: 600px) {
-  .hero__title {
-    font-size: 2.5rem;
-  }
-}
-@media only screen and (min-width: 960px) {
-  .hero__title {
-    font-size: 3.5rem;
-  }
-}
-@media only screen and (min-width: 1264px) {
-  .hero__title {
-    font-size: 4rem;
-  }
-}
-
 .indent-1 {
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 .indent-2 {
-  padding-left: 4em;
+  padding-left: 2em;
 }
 
 .presentation {
-  height: 50vh;
+  height: 100vh;
   margin: 0 1em;
 }
-.presentation__greeting {
-  padding-top: 6em;
-  gap: 0.5em;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 0.5fr 2.5fr;
-}
-.presentation__greeting h4 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  grid-column: 1/1;
-  grid-row: 1/1;
-}
 @media only screen and (min-width: 600px) {
-  .presentation__greeting h4 {
-    font-size: 2rem;
+  .presentation {
+    height: 65vh;
   }
 }
 @media only screen and (min-width: 960px) {
-  .presentation__greeting h4 {
-    font-size: 2.5rem;
+  .presentation {
+    height: 75vh;
   }
 }
 @media only screen and (min-width: 1264px) {
-  .presentation__greeting h4 {
-    font-size: 3.5rem;
+  .presentation {
+    height: 85vh;
+  }
+}
+.presentation__greeting {
+  padding: 4em 1.2em;
+  gap: 0.5em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 4fr;
+}
+@media only screen and (min-width: 600px) {
+  .presentation__greeting {
+    padding-top: 4em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 2fr 2fr;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .presentation__greeting {
+    padding-top: 6em;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.5fr 2.5fr;
+  }
+}
+.presentation__greeting h2 {
+  font-weight: 400;
+  align-self: center;
+  grid-column: 1/1;
+  grid-row: 2/2;
+}
+@media only screen and (min-width: 600px) {
+  .presentation__greeting h2 {
+    align-self: start;
+    grid-column: 1/span 2;
+    grid-row: 1/1;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .presentation__greeting h2 {
+    grid-column: 1/1;
+    grid-row: 1/1;
   }
 }
 .presentation__hello {
@@ -722,19 +739,26 @@ button {
 .presentation__profilebubble {
   height: 100px;
   width: 100px;
-  grid-column: 2/2;
-  grid-row: 1/span 2;
   justify-self: center;
-  margin-top: 1.5em;
+  align-self: center;
+  grid-column: 1/1;
+  grid-row: 1/1;
 }
 @media only screen and (min-width: 600px) {
   .presentation__profilebubble {
+    grid-column: 3/3;
+    grid-row: 1/3;
+    align-self: start;
     height: 175px;
     width: 175px;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
   }
 }
 @media only screen and (min-width: 960px) {
   .presentation__profilebubble {
+    grid-column: 2/2;
+    grid-row: 1/3;
     height: 200px;
     width: 200px;
   }
@@ -747,32 +771,26 @@ button {
 }
 .presentation__story {
   grid-column: 1/1;
-  grid-row: 2/2;
+  grid-row: 3/3;
 }
-.presentation__story p {
-  font-weight: 400;
-  max-width: 20ch;
-  font-size: 1rem;
-  line-height: 1.2rem;
+@media only screen and (min-width: 600px) {
+  .presentation__story {
+    grid-column: 1/4;
+    grid-row: 2/4;
+  }
 }
 @media only screen and (min-width: 600px) {
   .presentation__story p {
     max-width: 30ch;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-  }
-}
-@media only screen and (min-width: 960px) {
-  .presentation__story p {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
   }
 }
 @media only screen and (min-width: 1264px) {
   .presentation__story p {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
+    max-width: 42ch;
   }
+}
+.presentation__story-section {
+  padding-bottom: 0.4em;
 }
 
 .header {
@@ -781,7 +799,9 @@ button {
   left: 0;
   width: 100vw;
   z-index: 200;
-  height: 10vh;
+}
+.header:first-child {
+  padding-left: 2em;
 }
 .header__links {
   display: none;
@@ -790,12 +810,12 @@ button {
   .header__links {
     display: flex;
     width: 60vw;
-    margin: 2vh 0 2vh 0;
+    padding: 1vh 0;
   }
   .header__links-link {
-    padding: 0 0.5em;
     text-transform: uppercase;
     letter-spacing: 0.225rem;
+    padding-right: 4vw;
     cursor: pointer;
   }
 }
@@ -935,6 +955,84 @@ ul.sidebar__panel-nav > li > a {
   z-index: 990;
   padding: 3rem 20px 2rem 20px;
   width: 300px;
+}
+
+.projects {
+  height: 100vh;
+  background-color: #6435ca;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  margin-top: -90px;
+  height: 100px;
+}
+@media only screen and (min-width: 600px) {
+  .container {
+    margin-top: -140px;
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .container {
+    margin-top: -160px;
+    height: 170px;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .container {
+    margin-top: -200px;
+    height: 260px;
+  }
+}
+.container .light {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-right: 90vw solid transparent;
+  border-bottom: 60px solid #d5b7ff;
+}
+@media only screen and (min-width: 600px) {
+  .container .light {
+    border-bottom: 70px solid #d5b7ff;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .container .light {
+    border-bottom: 80px solid #d5b7ff;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .container .light {
+    border-bottom: 130px solid #d5b7ff;
+  }
+}
+.container .dark {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid #6435ca;
+  border-left: 100vw solid transparent;
+}
+@media only screen and (min-width: 600px) {
+  .container .dark {
+    border-bottom: 90px solid #6435ca;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .container .dark {
+    border-bottom: 100px solid #6435ca;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .container .dark {
+    border-bottom: 150px solid #6435ca;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

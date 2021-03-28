@@ -7,17 +7,19 @@
     left: 0;
     width: 100vw;
     z-index: 200;
-    height: 10vh;
+    &:first-child {
+        padding-left: 2em;
+    }
     &__links {
         display: none;
         @include mq(sm) {
             display: flex;
             width: 60vw;
-            margin: 2vh 0 2vh 0;
+            padding: 1vh 0;
             &-link {
-                padding: 0 0.5em;
                 text-transform: uppercase;
                 letter-spacing: 0.225rem;
+                padding-right: 4vw;
                 cursor: pointer;
             }
         }

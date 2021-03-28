@@ -16,19 +16,6 @@ h6 {
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    @include mq(sm) {
-        font-size: 3.5rem;
-    }
-    @include mq(md) {
-        font-size: 4.5rem;
-    }
-    @include mq(lg) {
-        font-size: 6rem;
-    }
-}
-h2 {
     font-size: 2rem;
     font-weight: 300;
     @include mq(sm) {
@@ -38,20 +25,33 @@ h2 {
         font-size: 3.5rem;
     }
     @include mq(lg) {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 }
-h3 {
-    font-size: 1.2rem;
-    font-weight: 400;
+h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
     @include mq(sm) {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     @include mq(md) {
         font-size: 3rem;
     }
     @include mq(lg) {
-        font-size: 4.5rem;
+        font-size: 3.8rem;
+    }
+}
+h3 {
+    font-size: 1rem;
+    line-height: 1.2em;
+    @include mq(sm) {
+        font-size: 1.3rem;
+    }
+    @include mq(md) {
+        font-size: 1.6rem;
+    }
+    @include mq(lg) {
+        font-size: 1.5rem;
     }
 }
 h4 {
@@ -103,6 +103,13 @@ a,
 button {
     font-family: $normal-font;
     font-size: 1rem;
+    line-height: 1.2em;
+    @include mq(md) {
+        font-size: 1.2rem;
+    }
+    @include mq(lg) {
+        font-size: 1.2rem;
+    }
 }
 
 .weight {
