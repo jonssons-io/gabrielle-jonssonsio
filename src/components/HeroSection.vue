@@ -74,7 +74,10 @@
             <div class="spacer"></div>
             <h3 class="interface__interfacedata clr-c-yellow">}</h3>
         </div>
-        <ScrollIndicator class="scrollindicator scrollindicator__hero" />
+        <ScrollIndicator
+            class="scrollindicator scrollindicator__hero"
+            link="presentation"
+        />
     </section>
 </template>
 

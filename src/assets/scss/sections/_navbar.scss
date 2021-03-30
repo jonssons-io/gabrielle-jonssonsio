@@ -7,8 +7,10 @@
     left: 0;
     width: 100vw;
     z-index: 200;
-    &:first-child {
-        padding-left: 2em;
+    @include mq(sm) {
+        &:first-child {
+            padding-left: 2em;
+        }
     }
     &__links {
         display: none;

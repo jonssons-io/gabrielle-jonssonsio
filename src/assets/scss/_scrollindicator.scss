@@ -2,6 +2,7 @@
 @use './breakpoints' as *;
 
 .scrollindicator {
+    z-index: 2;
     position: absolute;
     left: calc(50vw - 1rem);
     font-size: 2rem;
@@ -10,6 +11,7 @@
     transform-origin: bottom;
     animation-name: bounce;
     animation-timing-function: ease;
+    cursor: pointer;
     &__hero {
         top: 92vh;
         color: $cblue;
@@ -28,17 +30,18 @@
         }
     }
     &__projects {
-        top: 292vh;
+        // top: 292vh;
         color: $white;
-        @include mq(sm) {
-            top: 257vh;
-        }
-        @include mq(md) {
-            top: 267vh;
-        }
-        @include mq(lg) {
-            top: 277vh;
-        }
+
+        // @include mq(sm) {
+        //     top: 257vh;
+        // }
+        // @include mq(md) {
+        //     top: 267vh;
+        // }
+        // @include mq(lg) {
+        //     top: 277vh;
+        // }
     }
 }
 

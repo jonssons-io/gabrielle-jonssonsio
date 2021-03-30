@@ -104,11 +104,21 @@ button {
     font-family: $normal-font;
     font-size: 1rem;
     line-height: 1.2em;
+    text-decoration: none;
     @include mq(md) {
         font-size: 1.2rem;
     }
     @include mq(lg) {
         font-size: 1.2rem;
+    }
+}
+
+.card-text {
+    font-family: $normal-font;
+    font-size: 0.7rem;
+    line-height: 1.2em;
+    @include mq(md) {
+        font-size: 0.8rem;
     }
 }
 

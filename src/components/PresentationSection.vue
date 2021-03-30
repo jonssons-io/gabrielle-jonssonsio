@@ -26,6 +26,7 @@
         </div>
         <ScrollIndicator
             class="scrollindicator scrollindicator__presentation"
+            link="projects"
         />
     </section>
 </template>
