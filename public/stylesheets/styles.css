@@ -527,7 +527,7 @@ button {
 
 .card-text {
   font-family: "Poppins", sans-serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
   line-height: 1.2em;
 }
 @media only screen and (min-width: 960px) {
@@ -1034,7 +1034,6 @@ ul.sidebar__panel-nav > li > a {
 }
 
 .projects {
-  height: 100vh;
   background-color: #6435ca;
 }
 
@@ -1111,11 +1110,13 @@ ul.sidebar__panel-nav > li > a {
   }
 }
 
+.projects__wrapper {
+  margin-top: 4em;
+}
+
 .projects__card {
-  margin: 1.5em;
-  height: 40vh;
-  width: 20vw;
   background-color: #fff;
+  margin: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1129,50 +1130,64 @@ ul.sidebar__panel-nav > li > a {
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 5px 20px 5px;
   overflow: hidden;
+  height: 50vh;
+  width: 80vw;
+}
+@media only screen and (min-width: 1264px) {
+  .projects__card {
+    width: 20vw;
+  }
 }
 .projects__card-title {
   position: relative;
   text-align: center;
-  top: 30%;
+  top: 80%;
   opacity: 1;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-  color: black;
-  font-size: 1.2em;
 }
 .projects__card-description {
-  position: absolute;
-  bottom: 0em;
-  height: 0em;
-  padding: 0px 1em;
-  background-color: #fafafc;
-  width: 14em;
+  padding: 1em 1.5em;
   text-align: center;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+@media only screen and (min-width: 1264px) {
+  .projects__card-description {
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    position: absolute;
+    bottom: 0em;
+    height: 0em;
+    background-color: #fafafc;
+    width: 14em;
+  }
 }
 
 .card-text {
   padding-top: 1em;
 }
 
-.projects__card:hover {
-  transform: translateY(-5px) scale(1.05) translateZ(0);
-  -webkit-box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px rgba(206, 178, 252, 0.48);
-  -moz-box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px rgba(206, 178, 252, 0.48);
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px rgba(0, 0, 0, 0.48);
+@media only screen and (min-width: 1264px) {
+  .projects__card:hover {
+    transform: translateY(-5px) scale(1.05) translateZ(0);
+    -webkit-box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px rgba(206, 178, 252, 0.48);
+    -moz-box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px rgba(206, 178, 252, 0.48);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px rgba(0, 0, 0, 0.48);
+  }
 }
-.projects__card:hover .projects__card-description {
-  height: 12em;
-  padding: 0.5em 1em;
-}
-.projects__card:hover .projects__card-description h5 {
-  opacity: 1;
+@media only screen and (min-width: 1264px) {
+  .projects__card:hover .projects__card-description {
+    height: 12em;
+    padding: 0.5em 1em;
+  }
+  .projects__card:hover .projects__card-description h5 {
+    opacity: 1;
+  }
 }
 
 .scrollindicator-up {
   width: 100vw;
   z-index: 2;
+  padding: 2em;
 }
 
 .fai {

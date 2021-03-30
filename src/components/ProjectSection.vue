@@ -18,7 +18,7 @@
                         }"
                     > -->
                     <div class="projects__card-title">
-                        <h5>{{ project.name }}</h5>
+                        <h2>{{ project.name }}</h2>
                     </div>
                     <!-- </div> -->
                 </a>
