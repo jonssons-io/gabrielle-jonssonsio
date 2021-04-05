@@ -10,12 +10,12 @@
                 v-for="(project, index) in projects"
                 :key="index"
             >
-                <a :href="project.url" class="projects__card-desktop">
+                <a :href="project.url" class="desktop">
                     <div class="projects__card-title">
                         <h2>{{ project.name }}</h2>
                     </div>
                 </a>
-                <div class="projects__card-mobile">
+                <div class="mobile">
                     <div class="projects__card-title">
                         <h2>{{ project.name }}</h2>
                     </div>
@@ -36,10 +36,10 @@
                 </div>
                 <div class="projects__card-links d-flex justify-center">
                     <a :href="project.links.gh" target="_blank">
-                        <font-awesome-icon :icon="['fab', 'github-square']" />
+                        <font-awesome-icon :icon="['fab', 'github']" />
                     </a>
                     <a :href="project.links.published" target="_blank">
-                        <font-awesome-icon icon="external-link-square-alt" />
+                        <font-awesome-icon icon="external-link-alt" />
                     </a>
                 </div>
             </div>

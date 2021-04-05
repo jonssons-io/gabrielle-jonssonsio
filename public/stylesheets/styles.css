@@ -525,17 +525,6 @@ button {
   }
 }
 
-.card-text {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  line-height: 1.2em;
-}
-@media only screen and (min-width: 960px) {
-  .card-text {
-    font-size: 0.8rem;
-  }
-}
-
 .weight {
   font-weight: 700;
 }
@@ -1133,22 +1122,15 @@ ul.sidebar__panel-nav > li > a {
   overflow: hidden;
   width: 80vw;
 }
+@media only screen and (min-width: 960px) {
+  .projects__card {
+    width: 40vw;
+  }
+}
 @media only screen and (min-width: 1264px) {
   .projects__card {
     width: 20vw;
-  }
-}
-@media only screen and (min-width: 960px) {
-  .projects__card-mobile {
-    display: none;
-  }
-}
-.projects__card-desktop {
-  display: none;
-}
-@media only screen and (min-width: 960px) {
-  .projects__card-desktop {
-    display: block;
+    min-height: 40vh;
   }
 }
 .projects__card-title {
@@ -1228,6 +1210,21 @@ ul.sidebar__panel-nav > li > a {
   font-size: 2rem;
   cursor: pointer;
   color: #fff;
+}
+
+.desktop {
+  display: none;
+}
+@media only screen and (min-width: 960px) {
+  .desktop {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -81,21 +81,13 @@
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 5px 20px 5px;
     overflow: hidden;
-    // height: 45vh;
     width: 80vw;
+    @include mq(md) {
+        width: 40vw;
+    }
     @include mq(lg) {
         width: 20vw;
-    }
-    &-mobile {
-        @include mq(md) {
-            display: none;
-        }
-    }
-    &-desktop {
-        display: none;
-        @include mq(md) {
-            display: block;
-        }
+        min-height: 40vh;
     }
     &-title {
         position: relative;
@@ -180,4 +172,17 @@
     font-size: 2rem;
     cursor: pointer;
     color: $white;
+}
+
+.desktop {
+    display: none;
+    @include mq(md) {
+        display: block;
+    }
+}
+
+.mobile {
+    @include mq(md) {
+        display: none;
+    }
 }

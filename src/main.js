@@ -10,13 +10,13 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
     faAngleDown,
     faAngleUp,
-    faExternalLinkSquareAlt,
+    faExternalLinkAlt,
 } from '@fortawesome/free-solid-svg-icons'
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import './../public/stylesheets/styles.css'
 
-library.add(faAngleDown, faAngleUp, faGithubSquare, faExternalLinkSquareAlt)
+library.add(faAngleDown, faAngleUp, faGithub, faExternalLinkAlt)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 gsap.registerPlugin(TextPlugin, ScrollTrigger)
