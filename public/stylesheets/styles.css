@@ -663,7 +663,7 @@ button {
 }
 @media only screen and (min-width: 960px) {
   .scrollindicator__presentation {
-    top: 167vh;
+    top: 160vh;
   }
 }
 @media only screen and (min-width: 1264px) {
@@ -1177,6 +1177,7 @@ ul.sidebar__panel-nav > li > a {
 .projects__card-links a {
   margin: 0.5em;
   font-size: 2.5rem;
+  color: #6435ca;
 }
 
 .card-text {
@@ -1199,6 +1200,16 @@ ul.sidebar__panel-nav > li > a {
   .projects__card:hover .projects__card-description h5 {
     opacity: 1;
   }
+}
+
+.chip {
+  background-color: #9bca35;
+  margin: 0.3em;
+  padding: 0.3em 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .scrollindicator-up {

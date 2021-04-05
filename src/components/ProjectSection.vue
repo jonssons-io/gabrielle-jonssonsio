@@ -23,6 +23,17 @@
                 <div class="projects__card-description">
                     <p class="card-text">{{ project.description }}</p>
                 </div>
+                <div
+                    class="project__card-chips d-flex flex-wrap justify-center"
+                >
+                    <p
+                        class="chip"
+                        v-for="(chip, index) in project.chips"
+                        :key="index"
+                    >
+                        {{ chip }}
+                    </p>
+                </div>
                 <div class="projects__card-links d-flex justify-center">
                     <a :href="project.links.gh" target="_blank">
                         <font-awesome-icon :icon="['fab', 'github-square']" />
@@ -50,17 +61,17 @@ export default {
         return {
             projects: [
                 {
-                    name: 'AngularSaloon',
-                    url: 'https://gabbijonsson.github.io/angular-saloon/',
-                    stack: 'angular',
-                    bgURL: require('./../assets/images/projects/cardangularsaloon.jpg'),
+                    name: 'Jonssons.io',
+                    url: 'https://hamsterwars-hamsterburen.herokuapp.com/',
+                    stack: 'Vue, gsap, ScrollMagic',
+                    bgURL: require('./../assets/images/projects/cardjonssonsio.png'),
                     description:
-                        'First time using a JS framework. Part of a school project to learn state management in Angular.',
+                        'Designed and built my own portfolio. Challenged myself by adding and learning new libraries.',
                     links: {
-                        gh: 'https://github.com/gabbijonsson/angular-saloon',
-                        published:
-                            'https://gabbijonsson.github.io/angular-saloon/',
+                        gh: 'https://github.com/jonssons-io/jonssonsio',
+                        published: '',
                     },
+                    chips: ['Vue', 'SCSS', 'gsap', 'ScrollMagic', 'Firebase'],
                 },
                 {
                     name: 'HamsterWars',
@@ -75,18 +86,21 @@ export default {
                         published:
                             'https://hamsterwars-hamsterburen.herokuapp.com/',
                     },
+                    chips: ['React', 'MongoDB', 'Express', 'NodeJS'],
                 },
                 {
-                    name: 'Jonssons.io',
-                    url: 'https://hamsterwars-hamsterburen.herokuapp.com/',
-                    stack: 'Vue, gsap, ScrollMagic',
-                    bgURL: require('./../assets/images/projects/cardjonssonsio.png'),
+                    name: 'AngularSaloon',
+                    url: 'https://gabbijonsson.github.io/angular-saloon/',
+                    stack: 'angular',
+                    bgURL: require('./../assets/images/projects/cardangularsaloon.jpg'),
                     description:
-                        'Designed and built my own portfolio. Challenged myself by adding and learning new libraries.',
+                        'First time using a JS framework. Part of a school project to learn state management in Angular.',
                     links: {
-                        gh: 'https://github.com/jonssons-io/jonssonsio',
-                        published: '',
+                        gh: 'https://github.com/gabbijonsson/angular-saloon',
+                        published:
+                            'https://gabbijonsson.github.io/angular-saloon/',
                     },
+                    chips: ['Angular'],
                 },
             ],
         }
