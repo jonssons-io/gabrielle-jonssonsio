@@ -10,20 +10,26 @@
                 v-for="(project, index) in projects"
                 :key="index"
             >
-                <a :href="project.url">
-                    <!-- <div
-                        class="projects__card__image"
-                        :style="{
-                            'background-image': 'url(' + project.bgURL + ')',
-                        }"
-                    > -->
+                <a :href="project.url" class="projects__card-desktop">
                     <div class="projects__card-title">
                         <h2>{{ project.name }}</h2>
                     </div>
-                    <!-- </div> -->
                 </a>
+                <div class="projects__card-mobile">
+                    <div class="projects__card-title">
+                        <h2>{{ project.name }}</h2>
+                    </div>
+                </div>
                 <div class="projects__card-description">
                     <p class="card-text">{{ project.description }}</p>
+                </div>
+                <div class="projects__card-links d-flex justify-center">
+                    <a :href="project.links.gh" target="_blank">
+                        <font-awesome-icon :icon="['fab', 'github-square']" />
+                    </a>
+                    <a :href="project.links.published" target="_blank">
+                        <font-awesome-icon icon="external-link-square-alt" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -48,10 +54,13 @@ export default {
                     url: 'https://gabbijonsson.github.io/angular-saloon/',
                     stack: 'angular',
                     bgURL: require('./../assets/images/projects/cardangularsaloon.jpg'),
-                    credit:
-                        'Photo by <a href="https://unsplash.com/@danteov_seen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nikola Jovanovic</a> on <a href="https://unsplash.com/s/photos/pub?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
                     description:
                         'First time using a JS framework. Part of a school project to learn state management in Angular.',
+                    links: {
+                        gh: 'https://github.com/gabbijonsson/angular-saloon',
+                        published:
+                            'https://gabbijonsson.github.io/angular-saloon/',
+                    },
                 },
                 {
                     name: 'HamsterWars',
@@ -60,6 +69,12 @@ export default {
                     bgURL: require('./../assets/images/projects/cardhamsterwars.png'),
                     description:
                         'Full scale school project using the MERN-stack. Goal was to implement all previous classes in a team environment.',
+                    links: {
+                        gh:
+                            'https://github.com/gabbijonsson/hamsterwars-hamsterburen',
+                        published:
+                            'https://hamsterwars-hamsterburen.herokuapp.com/',
+                    },
                 },
                 {
                     name: 'Jonssons.io',
@@ -68,6 +83,10 @@ export default {
                     bgURL: require('./../assets/images/projects/cardjonssonsio.png'),
                     description:
                         'Designed and built my own portfolio. Challenged myself by adding and learning new libraries.',
+                    links: {
+                        gh: 'https://github.com/jonssons-io/jonssonsio',
+                        published: '',
+                    },
                 },
             ],
         }

@@ -1117,6 +1117,7 @@ ul.sidebar__panel-nav > li > a {
 .projects__card {
   background-color: #fff;
   margin: 1.5em;
+  padding-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1130,12 +1131,24 @@ ul.sidebar__panel-nav > li > a {
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 5px 20px 5px;
   overflow: hidden;
-  height: 50vh;
   width: 80vw;
 }
 @media only screen and (min-width: 1264px) {
   .projects__card {
     width: 20vw;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .projects__card-mobile {
+    display: none;
+  }
+}
+.projects__card-desktop {
+  display: none;
+}
+@media only screen and (min-width: 960px) {
+  .projects__card-desktop {
+    display: block;
   }
 }
 .projects__card-title {
@@ -1160,6 +1173,10 @@ ul.sidebar__panel-nav > li > a {
     background-color: #fafafc;
     width: 14em;
   }
+}
+.projects__card-links a {
+  margin: 0.5em;
+  font-size: 2.5rem;
 }
 
 .card-text {
