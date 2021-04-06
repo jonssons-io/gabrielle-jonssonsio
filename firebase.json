@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "gabrielle-jonssons",
     "public": "dist",
     "ignore": [
       "firebase.json",
