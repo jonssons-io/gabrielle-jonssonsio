@@ -10,7 +10,7 @@
                 v-for="(project, index) in projects"
                 :key="index"
             >
-                <a :href="project.url" class="desktop">
+                <a :href="project.url" class="desktop" target="_blank">
                     <div class="projects__card-title">
                         <h2>{{ project.name }}</h2>
                     </div>

@@ -86,8 +86,8 @@
         width: 40vw;
     }
     @include mq(lg) {
-        width: 30vw;
-        min-height: 40vh;
+        width: 25vw;
+        min-height: 35vh;
     }
     &-title {
         position: relative;
@@ -143,6 +143,9 @@
     letter-spacing: 0.2em;
     font-size: 0.8rem;
     font-weight: 700;
+    @include mq(lg) {
+        margin-top: 1.5em;
+    }
 }
 
 .scrollindicator-up {

@@ -1126,8 +1126,8 @@ ul.sidebar__panel-nav > li > a {
 }
 @media only screen and (min-width: 1264px) {
   .projects__card {
-    width: 30vw;
-    min-height: 40vh;
+    width: 25vw;
+    min-height: 35vh;
   }
 }
 .projects__card-title {
@@ -1177,6 +1177,11 @@ ul.sidebar__panel-nav > li > a {
   letter-spacing: 0.2em;
   font-size: 0.8rem;
   font-weight: 700;
+}
+@media only screen and (min-width: 1264px) {
+  .chip {
+    margin-top: 1.5em;
+  }
 }
 
 .scrollindicator-up {
