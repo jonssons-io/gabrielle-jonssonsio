@@ -61,17 +61,31 @@ export default {
         return {
             projects: [
                 {
-                    name: 'Jonssons.io',
-                    url: 'https://hamsterwars-hamsterburen.herokuapp.com/',
-                    stack: 'Vue, gsap, ScrollMagic',
+                    name: 'Portfolio',
+                    url: 'https://gabrielle.jonssons.io',
+                    stack: 'Vue, gsap, ScrollMagic, Firebase',
                     bgURL: require('./../assets/images/projects/cardjonssonsio.png'),
                     description:
                         'Designed and built my own portfolio. Challenged myself by adding and learning new libraries.',
                     links: {
-                        gh: 'https://github.com/jonssons-io/jonssonsio',
-                        published: '',
+                        gh:
+                            'https://github.com/jonssons-io/gabrielle-jonssonsio',
+                        published: 'https://gabrielle.jonssons.io',
                     },
                     chips: ['Vue', 'SCSS', 'gsap', 'ScrollMagic', 'Firebase'],
+                },
+                {
+                    name: 'Jonssons.io',
+                    url: 'https://jonssons.io',
+                    stack: 'Vue, Firebase',
+                    bgURL: require('./../assets/images/projects/cardjonssonsio.png'),
+                    description:
+                        'Designed and built our placeholder-website for Jonssons.io.',
+                    links: {
+                        gh: 'https://github.com/jonssons-io/main-jonssonsio',
+                        published: 'https://jonssons.io',
+                    },
+                    chips: ['Vue', 'SCSS', 'Firebase'],
                 },
                 {
                     name: 'HamsterWars',

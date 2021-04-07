@@ -147,7 +147,7 @@ export default {
             .setClassToggle('header', 'bgclr-t-white')
             .addTo(controller)
         new ScrollMagic.Scene({
-            duration: this.currHeight,
+            duration: this.currHeight * 10,
             offset: this.currHeight + this.calcHeight,
         })
             .setClassToggle('header', 'bgclr-t-primary')
