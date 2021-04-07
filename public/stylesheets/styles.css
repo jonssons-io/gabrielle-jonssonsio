@@ -874,7 +874,7 @@ button {
 @media only screen and (min-width: 600px) {
   .header__links {
     display: flex;
-    width: 60vw;
+    width: 90vw;
     padding: 1vh 0;
   }
   .header__links-link {
@@ -1020,6 +1020,43 @@ ul.sidebar__panel-nav > li > a {
   z-index: 990;
   padding: 3rem 20px 2rem 20px;
   width: 300px;
+}
+
+.list-spacer {
+  border-bottom: 1px solid #d5b7ff;
+}
+
+.nav-icon {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.nav-icon a {
+  margin-right: 1em;
+}
+.nav-icon a svg {
+  font-size: 2em;
+}
+
+.icons-navbar {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  margin-left: 10vw;
+}
+.icons-navbar a svg {
+  font-size: 1.2rem;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+@media only screen and (min-width: 960px) {
+  .icons-navbar a svg {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  .icons-navbar a svg {
+    font-size: 1.6rem;
+  }
 }
 
 .projects {

@@ -32,6 +32,36 @@
                                 <a @click="goto('about')">About</a>
                             </li>
                             <li><a @click="goto('projects')">Projects</a></li>
+                            <div class="list-spacer"></div>
+                            <ul class="sidebar__panel-nav">
+                                <li class="nav-icon">
+                                    <a
+                                        href="https://www.linkedin.com/in/gabbijonsson/"
+                                        target="_blank"
+                                        ><font-awesome-icon
+                                            :icon="['fab', 'linkedin']"
+                                    /></a>
+                                    <a
+                                        href="https://github.com/gabbijonsson"
+                                        target="_blank"
+                                        ><font-awesome-icon
+                                            :icon="['fab', 'github']"
+                                    /></a>
+                                    <a
+                                        href="https://www.facebook.com/gabbient/"
+                                        target="_blank"
+                                        ><font-awesome-icon
+                                            :icon="['fab', 'facebook']"
+                                    /></a>
+                                    <a
+                                        href="https://api.whatsapp.com/send?phone=+46736797611"
+                                        target="_blank"
+                                        ><font-awesome-icon
+                                            :icon="['fab', 'whatsapp']"
+                                    /></a>
+                                </li>
+                            </ul>
+                            <div class="spacer-sidebar"></div>
                         </ul>
                     </div>
                 </transition>
@@ -49,6 +79,32 @@
                 >
                     Projects
                 </p>
+                <div class="icons-navbar d-flex align-center">
+                    <a
+                        class="clr-c-blue"
+                        href="https://www.linkedin.com/in/gabbijonsson/"
+                        target="_blank"
+                        ><font-awesome-icon :icon="['fab', 'linkedin']"
+                    /></a>
+                    <a
+                        class="clr-c-blue"
+                        href="https://github.com/gabbijonsson"
+                        target="_blank"
+                        ><font-awesome-icon :icon="['fab', 'github']"
+                    /></a>
+                    <a
+                        class="clr-c-blue"
+                        href="https://www.facebook.com/gabbient/"
+                        target="_blank"
+                        ><font-awesome-icon :icon="['fab', 'facebook']"
+                    /></a>
+                    <a
+                        class="clr-c-blue"
+                        href="https://api.whatsapp.com/send?phone=+46736797611"
+                        target="_blank"
+                        ><font-awesome-icon :icon="['fab', 'whatsapp']"
+                    /></a>
+                </div>
             </div>
         </nav>
     </header>

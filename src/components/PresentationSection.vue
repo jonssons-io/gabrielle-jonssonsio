@@ -10,7 +10,7 @@
                     I started my journey to become a frontend developer in 2019.
                 </p>
                 <p class="presentation__story-section">
-                    Although JavaScript is my strong suite, I recently found an
+                    Although JavaScript is my strong suit, I recently found an
                     interest in accessibility, UX and UI.
                 </p>
                 <p class="presentation__story-section">

@@ -16,7 +16,7 @@
         display: none;
         @include mq(sm) {
             display: flex;
-            width: 60vw;
+            width: 90vw;
             padding: 1vh 0;
             &-link {
                 text-transform: uppercase;
@@ -162,4 +162,36 @@ ul.sidebar__panel-nav > li > a {
     z-index: 990;
     padding: 3rem 20px 2rem 20px;
     width: 300px;
+}
+.list-spacer {
+    border-bottom: 1px solid $primary-lighten;
+}
+
+.nav-icon {
+    display: flex;
+    flex-flow: row nowrap;
+    & a {
+        margin-right: 1em;
+        & svg {
+            font-size: 2em;
+        }
+    }
+}
+
+.icons-navbar {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    margin-left: 10vw;
+    a svg{
+        font-size: 1.2rem;
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+        @include mq(md) {
+            font-size: 1.4rem;
+        }
+        @include mq(lg) {
+            font-size: 1.6rem;
+        }
+    }
 }

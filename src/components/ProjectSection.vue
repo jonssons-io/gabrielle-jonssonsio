@@ -66,7 +66,7 @@ export default {
                     stack: 'Vue, gsap, ScrollMagic, Firebase',
                     bgURL: require('./../assets/images/projects/cardjonssonsio.png'),
                     description:
-                        'Designed and built my own portfolio. Challenged myself by adding and learning new libraries.',
+                        'I designed and built my own portfolio. For this project, I challenged myself by adding and learning new libraries.',
                     links: {
                         gh:
                             'https://github.com/jonssons-io/gabrielle-jonssonsio',
@@ -80,7 +80,7 @@ export default {
                     stack: 'Vue, Firebase',
                     bgURL: require('./../assets/images/projects/cardjonssonsio.png'),
                     description:
-                        'Designed and built our placeholder-website for Jonssons.io.',
+                        'I designed and built our placeholder website for Jonssons.io.',
                     links: {
                         gh: 'https://github.com/jonssons-io/main-jonssonsio',
                         published: 'https://jonssons.io',
@@ -93,7 +93,7 @@ export default {
                     stack: 'React, NodeJS, Express, MongoDB',
                     bgURL: require('./../assets/images/projects/cardhamsterwars.png'),
                     description:
-                        'Full scale school project using the MERN-stack. Goal was to implement all previous classes in a team environment.',
+                        'Full scale school project using the MERN-stack. The goal was to implement all previous classes in a team environment. My responsibility and focus was mainly the backend.',
                     links: {
                         gh:
                             'https://github.com/gabbijonsson/hamsterwars-hamsterburen',
@@ -108,7 +108,7 @@ export default {
                     stack: 'angular',
                     bgURL: require('./../assets/images/projects/cardangularsaloon.jpg'),
                     description:
-                        'First time using a JS framework. Part of a school project to learn state management in Angular.',
+                        'The first time I was using a JS framework, early in 2020. This was part of a school project to learn state management in Angular.',
                     links: {
                         gh: 'https://github.com/gabbijonsson/angular-saloon',
                         published:
