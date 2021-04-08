@@ -27,35 +27,56 @@
                 <transition name="slide">
                     <div v-if="isBurgerActive" class="sidebar__panel">
                         <ul class="sidebar__panel-nav">
-                            <li><a @click="goto('home')">Home</a></li>
                             <li>
-                                <a @click="goto('about')">About</a>
+                                <a
+                                    @click="goto('home')"
+                                    @keyup.enter="goto('home')"
+                                >
+                                    Home
+                                </a>
                             </li>
-                            <li><a @click="goto('projects')">Projects</a></li>
+                            <li>
+                                <a
+                                    @click="goto('about')"
+                                    @keyup.enter="goto('home')"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    @click="goto('projects')"
+                                    @keyup.enter="goto('home')"
+                                    >Projects</a
+                                >
+                            </li>
                             <div class="list-spacer"></div>
                             <ul class="sidebar__panel-nav">
                                 <li class="nav-icon">
                                     <a
                                         href="https://www.linkedin.com/in/gabbijonsson/"
                                         target="_blank"
+                                        aria-label="Go to Gabrielles LinkedIn profile"
                                         ><font-awesome-icon
                                             :icon="['fab', 'linkedin']"
                                     /></a>
                                     <a
                                         href="https://github.com/gabbijonsson"
                                         target="_blank"
+                                        aria-label="Go to Gabrielles Github"
                                         ><font-awesome-icon
                                             :icon="['fab', 'github']"
                                     /></a>
                                     <a
                                         href="https://www.facebook.com/gabbient/"
                                         target="_blank"
+                                        aria-label="Go to Gabrielles Facebook profile"
                                         ><font-awesome-icon
                                             :icon="['fab', 'facebook']"
                                     /></a>
                                     <a
                                         href="https://api.whatsapp.com/send?phone=+46736797611"
                                         target="_blank"
+                                        aria-label="Start a conversation with Gabrielle on WhatsApp"
                                         ><font-awesome-icon
                                             :icon="['fab', 'whatsapp']"
                                     /></a>
@@ -150,26 +171,21 @@ export default {
                 element.scrollIntoView({ behavior: 'smooth' })
             }
         },
-        mediaQueryAction(mql) {
-            console.log(mql)
+        mediaQueryAction() {
             if (this.mqls[0].matches) {
                 // xs
-                console.log('xs')
                 this.currentHeightValue = 1
                 return
             } else if (this.mqls[1].matches) {
                 // sm
-                console.log('sm')
                 this.currentHeightValue = 0.65
                 return
             } else if (this.mqls[2].matches) {
                 // md
-                console.log('md')
                 this.currentHeightValue = 0.75
                 return
             } else if (this.mqls[3].matches) {
                 // lg
-                console.log('lg')
                 this.currentHeightValue = 0.85
                 return
             }
@@ -185,7 +201,7 @@ export default {
     },
     mounted() {
         for (let i = 0; i < this.mqls.length; i++) {
-            this.mediaQueryAction(this.mqls[i])
+            this.mediaQueryAction()
             this.mqls[i].addEventListener('change', this.mediaQueryAction)
         }
 
