@@ -103,7 +103,7 @@ export default {
                     disabled: false,
                 },
                 {
-                    name: 'Jonssons.io',
+                    name: 'jonssons.io',
                     url: 'https://jonssons.io',
                     stack: 'Vue, Firebase',
                     description:
