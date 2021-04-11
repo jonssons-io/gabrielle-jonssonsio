@@ -10,6 +10,9 @@
                 v-for="(project, index) in projects"
                 :key="index"
             >
+                <div class="projects-wip" v-if="project.wip">
+                    <span>Coming soon</span>
+                </div>
                 <a :href="project.url" class="desktop" target="_blank">
                     <div class="projects__card-title">
                         <h2>{{ project.name }}</h2>
@@ -35,10 +38,20 @@
                     </p>
                 </div>
                 <div class="projects__card-links d-flex justify-center">
-                    <a :href="project.links.gh" target="_blank">
+                    <a
+                        :href="project.links.gh"
+                        target="_blank"
+                        :class="{ 'disabled__project-link': project.disabled }"
+                    >
                         <font-awesome-icon :icon="['fab', 'github']" />
                     </a>
-                    <a :href="project.links.published" target="_blank">
+                    <a
+                        :href="project.links.published"
+                        target="_blank"
+                        :class="{
+                            'disabled__project-link': project.disabled == true,
+                        }"
+                    >
                         <font-awesome-icon icon="external-link-alt" />
                     </a>
                 </div>
@@ -61,10 +74,23 @@ export default {
         return {
             projects: [
                 {
+                    name: 'Glim Fotografi',
+                    url: '#',
+                    stack: 'Svelte, sapper',
+                    description:
+                        'Creating a photography showcase portfolio for the photographer Ninna Glimmerås.',
+                    links: {
+                        gh: '',
+                        published: '',
+                    },
+                    chips: ['Svelte', 'Sapper', 'SCSS'],
+                    wip: true,
+                    disabled: true,
+                },
+                {
                     name: 'Portfolio',
                     url: 'https://gabrielle.jonssons.io',
                     stack: 'Vue, gsap, ScrollMagic, Firebase',
-                    bgURL: require('./../assets/images/projects/cardjonssonsio.png'),
                     description:
                         'I designed and built my own portfolio. For this project, I challenged myself by adding and learning new libraries.',
                     links: {
@@ -73,12 +99,13 @@ export default {
                         published: 'https://gabrielle.jonssons.io',
                     },
                     chips: ['Vue', 'SCSS', 'gsap', 'ScrollMagic', 'Firebase'],
+                    wip: false,
+                    disabled: false,
                 },
                 {
                     name: 'Jonssons.io',
                     url: 'https://jonssons.io',
                     stack: 'Vue, Firebase',
-                    bgURL: require('./../assets/images/projects/cardjonssonsio.png'),
                     description:
                         'I designed and built our placeholder website for Jonssons.io.',
                     links: {
@@ -86,12 +113,13 @@ export default {
                         published: 'https://jonssons.io',
                     },
                     chips: ['Vue', 'SCSS', 'Firebase'],
+                    wip: false,
+                    disabled: false,
                 },
                 {
                     name: 'HamsterWars',
                     url: 'https://hamsterwars-hamsterburen.herokuapp.com/',
                     stack: 'React, NodeJS, Express, MongoDB',
-                    bgURL: require('./../assets/images/projects/cardhamsterwars.png'),
                     description:
                         'Full scale school project using the MERN-stack. The goal was to implement all previous classes in a team environment. My responsibility and focus was mainly the backend.',
                     links: {
@@ -101,12 +129,13 @@ export default {
                             'https://hamsterwars-hamsterburen.herokuapp.com/',
                     },
                     chips: ['React', 'MongoDB', 'Express', 'NodeJS'],
+                    wip: false,
+                    disabled: false,
                 },
                 {
                     name: 'AngularSaloon',
                     url: 'https://gabbijonsson.github.io/angular-saloon/',
                     stack: 'angular',
-                    bgURL: require('./../assets/images/projects/cardangularsaloon.jpg'),
                     description:
                         'The first time I was using a JS framework, early in 2020. This was part of a school project to learn state management in Angular.',
                     links: {
@@ -115,6 +144,8 @@ export default {
                             'https://gabbijonsson.github.io/angular-saloon/',
                     },
                     chips: ['Angular'],
+                    wip: false,
+                    disabled: false,
                 },
             ],
         }

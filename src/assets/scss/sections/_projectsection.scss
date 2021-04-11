@@ -97,7 +97,6 @@
         h2 {
             @include mq(lg) {
                 font-size: 3rem;
-
             }
         }
     }
@@ -131,7 +130,6 @@
         box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
             0 24px 46px rgba(0, 0, 0, 0.48);
     }
-    
 }
 
 .chip {
@@ -175,5 +173,31 @@
 .mobile {
     @include mq(md) {
         display: none;
+    }
+}
+
+.disabled__project-link {
+    pointer-events: none;
+    cursor: default;
+    svg {
+        color: $cgrey;
+    }
+}
+
+.projects-wip {
+    position: absolute;
+    bottom: 30%;
+    z-index: 3;
+    height: 40%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $cdarkgrey;
+        font-weight: 500;
     }
 }
