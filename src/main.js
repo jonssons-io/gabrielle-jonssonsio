@@ -15,7 +15,7 @@ import {
 import {
     faGithub,
     faLinkedin,
-    faFacebook,
+    faInstagram,
     faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -27,7 +27,7 @@ library.add(
     faGithub,
     faExternalLinkAlt,
     faLinkedin,
-    faFacebook,
+    faInstagram,
     faWhatsapp
 )
 

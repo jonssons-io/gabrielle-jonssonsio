@@ -67,11 +67,11 @@
                                             :icon="['fab', 'github']"
                                     /></a>
                                     <a
-                                        href="https://www.facebook.com/gabbient/"
+                                        href="https://www.instagram.com/gabbient_/"
                                         target="_blank"
-                                        aria-label="Go to Gabrielles Facebook profile"
+                                        aria-label="Go to Gabrielles Instagram profile"
                                         ><font-awesome-icon
-                                            :icon="['fab', 'facebook']"
+                                            :icon="['fab', 'instagram']"
                                     /></a>
                                     <a
                                         href="https://api.whatsapp.com/send?phone=+46736797611"
@@ -115,9 +115,9 @@
                     /></a>
                     <a
                         class="clr-c-blue"
-                        href="https://www.facebook.com/gabbient/"
+                        href="https://www.instagram.com/gabbient_/"
                         target="_blank"
-                        ><font-awesome-icon :icon="['fab', 'facebook']"
+                        ><font-awesome-icon :icon="['fab', 'instagram']"
                     /></a>
                     <a
                         class="clr-c-blue"
