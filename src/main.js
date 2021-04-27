@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import VueAnalytics from 'vue-analytics'
 import store from './store'
 import ScrollMagic from 'scrollmagic'
 import gsap from 'gsap'
@@ -34,12 +35,14 @@ library.add(
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 gsap.registerPlugin(TextPlugin, ScrollTrigger)
 Vue.use(ScrollMagic)
-
-Vue.config.productionTip = false
-
-new Vue({
+Vue.use(VueAnalytics, {
+    id: 'G-3V9KZVDRT0',
     router,
-    store,
-    gsap,
-    render: (h) => h(App),
-}).$mount('#app')
+}),
+    (Vue.config.productionTip = false),
+    new Vue({
+        router,
+        store,
+        gsap,
+        render: (h) => h(App),
+    }).$mount('#app')
