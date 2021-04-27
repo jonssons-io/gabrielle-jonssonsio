@@ -31,6 +31,7 @@ library.add(
     faInstagram,
     faWhatsapp
 )
+Vue.config.productionTip = false
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 gsap.registerPlugin(TextPlugin, ScrollTrigger)
@@ -38,11 +39,11 @@ Vue.use(ScrollMagic)
 Vue.use(VueAnalytics, {
     id: 'G-3V9KZVDRT0',
     router,
-}),
-    (Vue.config.productionTip = false),
-    new Vue({
-        router,
-        store,
-        gsap,
-        render: (h) => h(App),
-    }).$mount('#app')
+})
+
+new Vue({
+    router,
+    store,
+    gsap,
+    render: (h) => h(App),
+}).$mount('#app')
