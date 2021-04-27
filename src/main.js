@@ -37,7 +37,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 gsap.registerPlugin(TextPlugin, ScrollTrigger)
 Vue.use(ScrollMagic)
 Vue.use(VueAnalytics, {
-    id: 'G-3V9KZVDRT0',
+    id: 'G-V0PJBRVKBF',
     router,
 })
 
