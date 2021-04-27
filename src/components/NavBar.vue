@@ -31,6 +31,7 @@
                                 <a
                                     @click="goto('home')"
                                     @keyup.enter="goto('home')"
+                                    title="Presentation about Frontend Developer - Gothenburg"
                                 >
                                     Home
                                 </a>
@@ -39,6 +40,7 @@
                                 <a
                                     @click="goto('about')"
                                     @keyup.enter="goto('home')"
+                                    title="Presentation of Gabrielle Jonsson - Junior Developer"
                                     >About</a
                                 >
                             </li>
@@ -46,6 +48,7 @@
                                 <a
                                     @click="goto('projects')"
                                     @keyup.enter="goto('home')"
+                                    title="Frontend projects in Svelte, Vue, React and Angular"
                                     >Projects</a
                                 >
                             </li>
@@ -56,6 +59,7 @@
                                         href="https://www.linkedin.com/in/gabbijonsson/"
                                         target="_blank"
                                         aria-label="Go to Gabrielles LinkedIn profile"
+                                        title="Gabrielle Jonssons LinkedIn - Connect with a frontend developer in Gothenburg"
                                         ><font-awesome-icon
                                             :icon="['fab', 'linkedin']"
                                     /></a>
@@ -63,6 +67,7 @@
                                         href="https://github.com/gabbijonsson"
                                         target="_blank"
                                         aria-label="Go to Gabrielles Github"
+                                        title="Gabrielle Jonssons GitHub repository for frontend development"
                                         ><font-awesome-icon
                                             :icon="['fab', 'github']"
                                     /></a>
@@ -70,6 +75,7 @@
                                         href="https://www.instagram.com/gabbient_/"
                                         target="_blank"
                                         aria-label="Go to Gabrielles Instagram profile"
+                                        title="Gabrielle Jonssons Instagram - Updates on current frontend projects"
                                         ><font-awesome-icon
                                             :icon="['fab', 'instagram']"
                                     /></a>
@@ -77,6 +83,7 @@
                                         href="https://api.whatsapp.com/send?phone=+46736797611"
                                         target="_blank"
                                         aria-label="Start a conversation with Gabrielle on WhatsApp"
+                                        title="Contact Gabrielle Jonsson about frontend projects in Gothenburg or remote"
                                         ><font-awesome-icon
                                             :icon="['fab', 'whatsapp']"
                                     /></a>
@@ -105,24 +112,28 @@
                         class="clr-c-blue"
                         href="https://www.linkedin.com/in/gabbijonsson/"
                         target="_blank"
+                        title="Gabrielle Jonssons LinkedIn - Connect with a frontend developer in Gothenburg"
                         ><font-awesome-icon :icon="['fab', 'linkedin']"
                     /></a>
                     <a
                         class="clr-c-blue"
                         href="https://github.com/gabbijonsson"
                         target="_blank"
+                        title="Gabrielle Jonssons GitHub repository for frontend development"
                         ><font-awesome-icon :icon="['fab', 'github']"
                     /></a>
                     <a
                         class="clr-c-blue"
                         href="https://www.instagram.com/gabbient_/"
                         target="_blank"
+                        title="Gabrielle Jonssons Instagram - Updates on current frontend projects"
                         ><font-awesome-icon :icon="['fab', 'instagram']"
                     /></a>
                     <a
                         class="clr-c-blue"
                         href="https://api.whatsapp.com/send?phone=+46736797611"
                         target="_blank"
+                        title="Contact Gabrielle Jonsson about frontend projects in Gothenburg or remote"
                         ><font-awesome-icon :icon="['fab', 'whatsapp']"
                     /></a>
                 </div>

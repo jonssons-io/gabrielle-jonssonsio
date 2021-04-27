@@ -22,6 +22,7 @@
                 ref="profilebubble"
                 class="presentation__profilebubble"
                 src="./../assets/images/Gab.png"
+                alt="Frontend developer Gabrielle Jonsson"
             />
         </div>
         <ScrollIndicator
